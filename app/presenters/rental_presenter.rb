@@ -20,6 +20,8 @@ class RentalPresenter < SimpleDelegator
     end
   end
 
+  private
+
   def helper
     # carrega todos metodos disponiveis dos helper para os controller
     @helper ||= ApplicationController.helpers
