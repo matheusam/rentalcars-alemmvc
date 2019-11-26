@@ -23,6 +23,6 @@ pt-BR:
             end_date:
               blank: 'deve ser definida.'
   scheduled: 'agendada'
-  ongoing: 'em andamento'
-  finilized: 'finalizada'
+  ongoing: 'Em andamento'
+  finalized: 'Finalizada'
   in_review: 'em revisão'
