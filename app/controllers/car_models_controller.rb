@@ -2,11 +2,11 @@ class CarModelsController < ApplicationController
   before_action :authorize_admin
 
   def index
-    @car_models = CarModel.all
+    @car_models = CarModel.all.decorate
   end
 
   def show
-    @car_model = CarModel.find(params[:id])
+    @car_model = CarModel.find(params[:id]).decorate
   end
 
   def new
