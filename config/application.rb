@@ -19,6 +19,7 @@ Bundler.require(*Rails.groups)
 
 module RentalCars
   class Application < Rails::Application
+    config.active_job.queue_adapter = :delayed_job
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
@@ -31,7 +32,7 @@ module RentalCars
 
     # Whitelist locales available for the application
     I18n.available_locales = [:'pt-BR']
- 
+
     # Set default locale to something other than :en
     I18n.default_locale = :'pt-BR'
     # Don't generate system test files.
