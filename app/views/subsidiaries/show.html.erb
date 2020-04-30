@@ -6,20 +6,20 @@
 
 <dl class="row">
   <dt class="col-sm-3">Endereço</dt>
-  <dd class="col-sm-9"><%= @subsidiary.address.label %></dd>
+  <dd class="col-sm-9"><%= @subsidiary&.address&.label %></dd>
 
   <dt class="col-sm-3">Complemento</dt>
-  <dd class="col-sm-9"><%= @subsidiary.address.complement %></dd>
+  <dd class="col-sm-9"><%= @subsidiary&.address&.complement %></dd>
 
   <dt class="col-sm-3">Bairro</dt>
-  <dd class="col-sm-9"><%= @subsidiary.address.neighborhood %></dd>
+  <dd class="col-sm-9"><%= @subsidiary&.address&.neighborhood %></dd>
 
   <dt class="col-sm-3">Cidade</dt>
-  <dd class="col-sm-9"><%= @subsidiary.address.city %></dd>
+  <dd class="col-sm-9"><%= @subsidiary&.address&.city %></dd>
 
   <dt class="col-sm-3">Estado</dt>
-  <dd class="col-sm-9"><%= @subsidiary.address.state %></dd>
-  
+  <dd class="col-sm-9"><%= @subsidiary&.address&.state %></dd>
+
   <dd class="col-sm-9"><%= link_to 'Editar', edit_subsidiary_path, class: 'btn btn-primary' %></dd>
 </dl>
 
